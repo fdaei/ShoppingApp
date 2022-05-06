@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity"
+    android:layoutDirection="rtl"
+    android:background="@color/colorBackground"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_back"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثبت نام"
+            android:textSize="14sp"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:lineSpacingExtra="4dp"
+                android:text="در صورتی که قبلا عملیات ثبت نام را انجام داده اید بر روی ورود به حساب کاربری کلیک کنید."/>
+
+            <EditText
+                android:gravity="right|center"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/edt_email"
+                android:hint="ایمیل"
+                android:drawableRight="@drawable/ic_baseline_smartphone_24"
+                android:background="@drawable/bg_edt"
+                android:textColor="@color/textColor"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                />
+
+            <EditText
+
+                android:gravity="right|center"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/edt_phone"
+                android:hint="شماره موبایل"
+                android:drawableRight="@drawable/ic_baseline_smartphone_24"
+                android:background="@drawable/bg_edt"
+                android:textColor="@color/textColor"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                />
+
+            <EditText
+                android:gravity="right|center"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/edt_password"
+                android:hint="رمز عبور"
+                android:drawableRight="@drawable/ic_baseline_lock_24"
+                android:background="@drawable/bg_edt"
+                android:textColor="@color/textColor"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:drawablePadding="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorBackground"
+                android:text="ثبت نام"
+                android:textStyle="bold"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/bg_btn_login"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:text="ورود به حساب کاربری"
+                android:layout_gravity="center"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

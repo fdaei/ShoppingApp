@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity"
+    android:background="@color/colorBackground"
+    android:layoutDirection="rtl"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سبد خرید"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorBackground"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/recycleRView_cart"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_buy"
+        android:text="ادامه فرایند خرید"
+        android:id="@+id/btn_continue"
+        android:textSize="12sp"
+        android:textColor="@color/colorBackground"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"/>
+
+
+</RelativeLayout>
